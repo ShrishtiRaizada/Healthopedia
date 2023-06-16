@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block css %}
+.fm
+{
+  margin-top:20px;
+  background-color:white;
+  padding:10px;
+  border-radius:10px;
+  width:40%;
+}
+.err
+{
+color:red;
+}
+.founderror
+{
+  color:red;
+}
+{% endblock %}
+
+{% block body %}
+<div class="container  fm">
+<div class="card">
+  <h5 class="card-header err">Sorry we found a error!!</h5>
+  <div class="card-body">
+    <p class="card-text founderror">{{error}}</p>
+    <a href="/signup" class="btn btn-primary">Go Back to Signup</a>
+  </div>
+</div>
+</div>
+
+
+
+{% endblock %}

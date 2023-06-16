@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% block css %}
+.fm
+{
+  margin-top:20px;
+  width:40%;
+  background-color:white;
+  padding:10px;
+  border-radius:10px;
+}
+.heading
+{
+    display:flex;
+    justify-content:center;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:blue;
+    margin-top:10px;
+}
+
+
+
+
+{% endblock %}
+{% block body %}
+<div class="heading">Create Account</div>
+<div class="container fm">
+<form   action="" method="post">
+    {% csrf_token %}
+     <div class=" form-row">
+         <div class="form-group col-md-6">
+      <label for="inputFirstName">First Name</label>
+      <input type="text" class="form-control" id="inputFirstName" placeholder="First Name" name="first_name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputLastName">Last Name</label>
+      <input type="text" class="form-control" id="inputLastName" placeholder="Last Name"  name="last_name">
+    </div>
+  </div>
+  <div class="form-row ">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email"  name="email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputusername">Username</label>
+      <input type="text" class="form-control" id="inputusername" placeholder="Username"  name="username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address Line 1</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="address">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" name="city">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+        <input type="text" class="form-control" id="inputState" name="state">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputPin">Pincode</label>
+      <input type="text" class="form-control" id="inputPin" name="pincode">
+    </div>
+  </div>
+
+    <div class="form-row">
+    <div class="form-group col-md-6">
+       <label for="exampleFormControlFile1">Upload Profile Picture</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="profile_pic">
+    </div>
+        <div class="form-group col-md-6">
+          <label for="exampleFormControlSelect1">Signup as</label>
+    <select class="form-control" id="exampleFormControlSelect1" name="signup_as">
+      <option value="Doctor">Doctor</option>
+      <option value="Patient">Patient</option>
+    </select>
+         </div>
+
+  </div>
+
+     <div class=" form-row">
+         <div class="form-group col-md-6">
+           <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password1">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="exampleInputPassword2"> Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword2" placeholder=" Confirm Password" name="password2">
+    </div>
+  </div>
+ <div class="form-check">
+    <label class="form-check-label">Already have an account? <a href="/">login</a></label>
+  </div>
+  <button type="submit" class="btn btn-primary mx-3">Sign in</button>
+</form>
+</div>
+
+
+
+{% endblock %}
