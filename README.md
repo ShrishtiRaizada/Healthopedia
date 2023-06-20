@@ -17,7 +17,8 @@ Database for blogs uploaded
 ![demodatabase](https://github.com/ShrishtiRaizada/Task2/assets/70793477/94b3621e-aaa5-48a4-ae08-2c803d2e517b)
 
 Website for reading blogs
-![fullblog](https://github.com/ShrishtiRaizada/Task2/assets/70793477/5c8073ed-b83a-4409-bd4a-200011b65f8c)
+![ful![fullwebsite](https://github.com/ShrishtiRaizada/Task2/assets/70793477/9e3dc934-dcb6-4dc2-bde0-a65d84a1081d)
+
 
 Mental Health Blog
 ![mentalhealth](https://github.com/ShrishtiRaizada/Task2/assets/70793477/54997d6f-d5a9-4213-b7a9-0b6a4589050f)
@@ -31,3 +32,6 @@ COVID-19 Blog
 
 Immunization Blog
 ![immunization](https://github.com/ShrishtiRaizada/Task2/assets/70793477/7678aeba-b3f4-4b2b-872b-8d169b0ce76a)
+
+View full blog site
+![fullblog](https://github.com/ShrishtiRaizada/Task2/assets/70793477/049d7aca-920e-4f93-95bd-ca3bb152526c)
