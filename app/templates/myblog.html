@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block css%}
+body
+{
+  background-image: linear-gradient(to right top, #d86fdd, #ff709c, #ff9568, #e3bf5e, #b0e08a);
+}
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+.heading
+{
+  margin-left:400px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cont
+{
+   margin-top:100px;
+}
+.cd
+{
+  margin-left:150px;
+
+}
+img
+{
+    border-radius:10px;
+    max-height:500px;
+}
+
+
+
+{% endblock %}
+
+{% block body %}
+
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0 ">
+    <div class="container">
+      <a class="navbar-brand heading" href="#!"><span style="color: #5e9693;">Read your</span><span style="color: #fff;">Blog here..</span></a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Section: Design Block-->
+  <section>
+    <!-- Intro -->
+    <div id="intro" class="bg-image vh-100 vh-100" style="
+          background-image:;
+        ">
+      <div class="container cont ">
+       {%  for item in records %}
+       <div class="card mb-3 cd" style="max-width: 800px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIKITQSwWuaQHW3bOF3btXOL2uk-jV628ibP4Q0_65TESHzOILxFJ3n9O8IGqBABfi2PEh-zSynRw&usqp=CAU&ec=48600112" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{item.1}}</h5>
+        <p class="card-text">{{item.5}}</p>
+
+      </div>
+    </div>
+  </div>
+     {% endfor %}
+</div>
+
+      </div>
+
+
+
+      <div class="mask" style="background-color: rgba(250, 182, 162, 0.15);"></div>
+    </div>
+    <!-- Intro -->
+  </section>
+  <!--Section: Design Block-->
+</header>
+
+
+
+
+{% endblock %}

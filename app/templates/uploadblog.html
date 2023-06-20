@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block css %}
+.fm
+{
+  margin-top:20px;
+  width:38%;
+  background-color:white;
+  padding:10px;
+  border-radius:10px;
+}
+.heading
+{
+    display:flex;
+    justify-content:center;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color:blue;
+    margin-top:10px;
+}
+
+img
+{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius:5px;
+}
+
+form label {
+     font-weight:bold;
+}
+
+
+
+{% endblock %}
+{% block body %}
+<div class="heading">Wellness Blog</div>
+<div class="container fm">
+<form   action="" method="post">
+    {% csrf_token %}
+   <img src="https://neilpatel.com/wp-content/uploads/2018/10/blog.jpg" alt="Wellness image">
+     <div class=" form-row">
+         <div class="form-group col-md-6">
+      <label for="inputTitle">Title</label>
+      <input type="text" class="form-control" id="inputTitle" placeholder="Blog Title" name="title" style="width:400px">
+    </div>
+  </div>
+  <div class="form-row ">
+    <div class="form-group col-md-6">
+      <label for="UploadBlogImage">Upload Blog Image</label>
+      <input type="file" class="form-control-file" id="UploadBlogImage" name="blog_pic" style="width:400px">
+    </div>
+  </div>
+  <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="Categoryofblog">Category</label>
+    <select class="form-control" id="Categoryofblog" name="Category" style="width:400px">
+      <option value="Mental Health">Mental Health</option>
+      <option value="Heart Disease">Heart Disease</option>
+      <option value="COVID 19">COVID-19</option>
+      <option value="IMMUNIZATION">Immunization</option>
+    </select>
+         </div>
+
+  </div>
+   <div class=" form-row">
+         <div class="form-group col-md-6">
+      <label for="inputSummary">Summary</label>
+      <input type="text" class="form-control" id="inputSummary" placeholder="Summarise it in 15 words" name="summary" style="width:400px">
+    </div>
+   </div>
+   <div class=" form-row">
+     <div class="form-group col-md-6">
+      <label for="inputContent">Content</label>
+      <textarea  class="form-control" id="inputContent" placeholder="Content" name="content" style="width:400px" maxlength="2000"></textarea>
+     </div>
+   </div>
+   <div class="form-check">
+    <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Save as Draft</label>
+  </div>
+
+   <button type="submit" class="btn btn-primary">Upload</button>
+
+</form>
+</div>
+
+
+
+{% endblock %}

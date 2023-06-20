@@ -83,6 +83,7 @@
                     <div class="mt-3">
                       <h4>  {{patient_details.first_name}} {{patient_details.last_name}}</h4>
                       <p class="text-secondary mb-1">{{patient_details.username}}</p>
+                      <button class="btn btn-warning view"><a href="/allblog">View blogs</a></button>
                     </div>
                   </div>
                 </div>
@@ -140,10 +141,10 @@
                   <hr>
                    <div class="row">
                     <div class="col-sm-3">
-                      <h6 class="mb-0">{{patient_details.pincode}}</h6>
+                      <h6 class="mb-0">Pincode</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      202001
+                      {{patient_details.pincode}}
                     </div>
                   </div>
                     <hr>

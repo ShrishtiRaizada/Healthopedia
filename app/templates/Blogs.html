@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block css %}
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+{% endblock %}
+
+{% block body %}
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+    <div class="container">
+      <a class="navbar-brand" href="#!"><span style="color: #5e9693;">Banao</span><span style="color: #fff;">Technologies</span></a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/mental">Mental Heath</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/heart">Heart Disease</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/covid">Covid 19</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/immune">Immunization</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Section: Design Block-->
+  <section>
+    <!-- Intro -->
+    <div id="intro" class="bg-image vh-100 vh-100" style="
+          background-image: url('https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1499&q=80');
+        ">
+      <div class="mask" style="background-color: rgba(250, 182, 162, 0.15);"></div>
+    </div>
+    <!-- Intro -->
+  </section>
+  <!--Section: Design Block-->
+</header>
+
+{% endblock %}
