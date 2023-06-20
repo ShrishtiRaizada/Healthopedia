@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load index %}
 {% block css%}
 
 .mask-custom {
@@ -130,7 +129,7 @@
         <div class="cards">
         {%  for item in records %}
   <div class="card">
-    <img class="card__image" src="{{url_list|index:forloop.counter}}" alt="">
+    <img class="card__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIKITQSwWuaQHW3bOF3btXOL2uk-jV628ibP4Q0_65TESHzOILxFJ3n9O8IGqBABfi2PEh-zSynRw&usqp=CAU&ec=48600112" alt="">
     <div class="card__content">
       <h3>{{item.1}}</h3>
       <div class="text">

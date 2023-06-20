@@ -132,18 +132,18 @@
         ">
       <div class="container cont ">
         <div class="cards">
-        {%  for item in records %}
+        {% for item in records %}
   <div class="card">
-    <img class="card__image" src="https://fakeimg.pl/400x300/009578/fff/" alt="">
+    <img class="card__image" src="https://img.freepik.com/free-vector/mental-health-awareness-concept_23-2148514643.jpg" alt="">
     <div class="card__content">
       <h3>{{item.1}}</h3>
       <div class="text">
-        {{item.3|slice:150}}...
+        {{item.4|slice:150}}...
       </div>
     </div>
     <div class="card__info">
       <div>
-        <a href="/getblog" class="card__link">View Article</a>
+        <a href="/getblog/{{item.0}}" class="card__link">View Article</a>
       </div>
     </div>
   </div>

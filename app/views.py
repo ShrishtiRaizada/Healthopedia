@@ -133,10 +133,11 @@ def blogpost(request):
             m.commit()
             return render(request, 'Blogs.html')
         else:
-            c = "insert into demo2 Values('{}','{}','{}','{}','{}','{}')".format(id,title,image,category,summary,content)
+            c = "insert into demo2 Values('{}','{}','{}','{}','{}','{}')".format(id, title, image, category, summary,
+                                                                                 content)
             cursor.execute(c)
             m.commit()
-            return render(request,'Blogs.html')
+            return render(request, 'Blogs.html')
     return render(request, 'uploadblog.html')
 def blogs(request):
     return render(request,'Blogs.html')
@@ -149,8 +150,7 @@ def mental(request):
     c = "select * from demo2 where category='{}'".format(cat)
     cursor.execute(c)
     t = tuple(cursor.fetchall())
-    url_list = ["https://www.example.com","https://www.google.com","https://www.github.com","https://www.python.org"]
-    context={'records': t, 'url_list': url_list}
+    context={'records': t}
     return render(request, 'Mental.html',context)
 
 def heart(request):
