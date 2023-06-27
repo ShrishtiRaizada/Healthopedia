@@ -1,5 +1,7 @@
-# Blog Post App by Shrishti Raizada 
+# Wellness Times
 # Mysql is used as a database 
+
+Wellness Time is a web app to help users (patients and doctors) to connect with each other. It also aims to debunk myths associated with mental health, Covid 19 and other heart diseases by the blog posts uploaded on the site by the doctors and specialists themselves. So the next time you fell unwell reach out to us for help.
 
 Patient Portal
 ![patient_viewblog](https://github.com/ShrishtiRaizada/Task2/assets/70793477/5103bdb8-8e63-4e80-afe2-89e657342399)
