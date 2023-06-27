@@ -1,5 +1,5 @@
 # Blog Post App by Shrishti Raizada 
-# Mysql is used as a database
+# Mysql is used as a database 
 
 Patient Portal
 ![patient_viewblog](https://github.com/ShrishtiRaizada/Task2/assets/70793477/5103bdb8-8e63-4e80-afe2-89e657342399)
