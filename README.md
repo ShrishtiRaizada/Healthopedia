@@ -1,4 +1,4 @@
-# Shortlisting Task2 for Banao Technologies by Shrishti Raizada (Django J-1)
+# Blog Post App by Shrishti Raizada 
 # Mysql is used as a database
 
 Patient Portal
